@@ -5,20 +5,21 @@ public class CalcPi {
 		int terms = Integer.parseInt(args[0]);
 		double pi = 0.0;
 		double minus_pi = 0;
-		int count = -1;
-		int count1 = 1;
+		double count;
 		// calculate pi
-		for (int i=0; i< (terms / 2); i++){
-			count = count + 4;
-			minus_pi = minus_pi - (1.0 / count);
-		}
-		for(int j = 0; j < (terms / 2)- 1; j++){
-			count1 = count1 + 4;
-			minus_pi = minus_pi + (1.0 / count1);
+		for (int i = 0 ; i< terms ; i++){
+			count = (2 * i) + 1;
+			if (i % 2 == 0) {
+				minus_pi = minus_pi + (1.0 / count);
+			}
+			else{
+				minus_pi = minus_pi - (1.0 / count);
+			}
+			
 		}
 
-		pi = ((1 + minus_pi) * 4);
-		System.out.println("pi according to Java: 3.141592653589793");
+		pi = ((minus_pi) * 4.0);
+		System.out.println("pi according to Java: " + Math.PI);
 		System.out.println("pi, aapproximated:     " +  pi);
 
 	}
