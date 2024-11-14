@@ -18,9 +18,9 @@ public  class  TestRandom {
 			ratio = (less/more);
 		}
 		
-		System.out.println("> 0.5:  " + more + " times");
-		System.out.println("<= 0.5:  " +less + " times");
-		System.out.println("ratio:  " + ratio);
+		System.out.println("> 0.5: " + more + " times");
+		System.out.println("<= 0.5: " +less + " times");
+		System.out.println("ratio: " + ratio);
 
 	}
 }
