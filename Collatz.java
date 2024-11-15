@@ -24,7 +24,7 @@ public class Collatz {
 					else{
 						new_number = (new_number * 3) + 1;
 					}
-					System.out.print(", " + new_number);
+					System.out.print(" " + new_number);
 				} // close the while loop
 				System.out.println(" (" + (steps + 1) + ")" );
 				steps = 0;
