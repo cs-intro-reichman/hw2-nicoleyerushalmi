@@ -26,8 +26,8 @@ public class Collatz {
 					}
 					System.out.print(", " + new_number);
 				} // close the while loop
-				System.out.println(" (" + steps + ")" );
-				steps = 1;
+				System.out.println(" (" + (steps + 1) + ")" );
+				steps = 0;
 				new_number = i + 1;
 			} // close the for loop
 			System.out.println("Every one of the first " + seed + " hailstone sequences reached 1.");
